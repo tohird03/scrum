@@ -4,4 +4,55 @@
   height: 100%;
   background-color: white;
   box-shadow: rgba(145, 158, 171, 0.16) 0px 16px 16px 0px;
+  padding: 10px 15px 20px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+}
+
+.navbar {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    font-family: "Public Sans", sans-serif;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(145, 158, 171, 0.16);
+    }
+    &.active {
+      background-color: rgba(145, 158, 171, 0.26);
+    }
+  }
 }

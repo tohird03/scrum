@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import styles from './header.scss'
 import Image from 'next/image'
-import { languages } from '@/constants/language'
+import { ILangsUi, languages } from '@/constants/language'
 
 import SettingsImg from '@/public/images/settings.png'
 
@@ -26,7 +26,7 @@ export default function Header() {
             </div>
             <div className={cx('header__lang-accardion-wrapper')}>
               {
-                languages?.map(lang => (
+                languages?.map((lang: ILangsUi) => (
                   <div className={cx('header__lang-accardion')}>
                     <Image
                       alt='Language'
