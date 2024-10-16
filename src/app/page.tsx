@@ -1,3 +1,4 @@
+import VideoPlayer from "@/components/Hls/HlsPlayer";
 import VideoCard from "@/components/VideoCard/VideoCard";
 import Image from "next/image";
 import { Suspense } from "react";
@@ -10,6 +11,8 @@ export default function Home() {
         title="Salom"
         desc="Bu shunaqa video"
       />
+
+      <VideoPlayer videoId="670f955bae5e2424da5eb59d"/>
     </div>
   );
 }
